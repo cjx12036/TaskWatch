@@ -1,0 +1,45 @@
+name: Early-preview feedback / 早期预览反馈
+description: Tell us whether TaskWatch installed cleanly and whether its reports were useful. / 告诉我们安装是否顺利、报告是否有用。
+title: "[Feedback / 反馈]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for trying the early preview. Do not include private prompts, conversation transcripts, tool logs, credentials, API keys, or other sensitive data.
+
+        感谢试用早期预览版。请勿包含私有提示词、对话转录、工具日志、凭据、API 密钥或其他敏感数据。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check / 隐私检查
+      options:
+        - label: I have removed private prompts, logs, credentials, and keys. / 我已移除私有提示词、日志、凭据和密钥。
+          required: true
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback type / 反馈类型
+      options:
+        - installation / 安装问题
+        - false positive / 误报
+        - missed deviation / 漏报
+        - usefulness / 使用体验
+        - other / 其他
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: DSH version, Node.js version, operating system, and plugin version. Do not include account or machine identifiers. / 请填写 DSH、Node.js、操作系统和插件版本；不要包含账户或机器标识。
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What happened? / 发生了什么？
+      description: Describe the issue or feedback using a redacted, non-sensitive summary. / 请用已脱敏的非敏感摘要描述问题或反馈。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect? / 你的预期是什么？

@@ -2,9 +2,21 @@
 
 [English](README.md)
 
-TaskWatch 是 [DeepSeek Harness（DSH）](https://github.com/deepseek-ai/deepseek-harness) 的任务意图监督插件。它检查 Agent 的执行是否仍在推进用户真正要完成的任务，并将用户原话、模型理解、执行证据与监督建议分开保存，避免模型推测悄然变成新指令。
+> **Agent 很忙，但忙的还是你想做的事吗？**
+
+一个局部修复可能在没有确认目标之前就变成大型重构。TaskWatch 是 [DeepSeek Harness（DSH）](https://github.com/deepseek-ai/deepseek-harness) 的早期预览任务意图监督插件，将用户原话、模型理解、可见执行证据与监督建议分开保存，避免模型推测悄然变成新指令。
 
 TaskWatch 是独立的 DSH 插件，不代表也未获得 DeepSeek 的认可或背书。
+
+## 试用早期预览版
+
+```sh
+dsh plugin --profile web add github:cjx12036/TaskWatch
+```
+
+这是早期预览版。导出的 bundle 已在 DSH `0.1.5-rc.3` 上完成安装和侧栏界面流程的冒烟检查，全程零模型调用。最新宿主上的实时监督生成与 coach 行为**尚未验证**，TaskWatch 也不宣称性能、benchmark 或质量结果。已测范围与限制见[预发布说明](docs/releases/v0.0.1.md)。
+
+可直接复制的中英文推广文案、仅作示意的 45–60 秒录制脚本，以及仍需人工完成的发布检查项，见[发布素材](docs/launch.md)。
 
 ## 能做什么
 

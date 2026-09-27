@@ -66,3 +66,25 @@ test('installation uses the shipped client without a TaskWatch prepare hook', ()
   assert.match(text('../README.md'), /prebuilt client[\s\S]*no TaskWatch install-time build or prepare hook/);
   assert.match(text('../README.zh-CN.md'), /预构建客户端[\s\S]*不需要 TaskWatch 安装时构建或 prepare hook/);
 });
+
+test('launch materials are public, bilingual, and do not present a hypothetical demo as evidence', () => {
+  const launch = text('../docs/launch.md');
+  const notes = text('../docs/releases/v0.0.1.md');
+  const feedback = text('../.github/ISSUE_TEMPLATE/feedback.yml');
+
+  assert.match(launch, /Your coding agent is busy\. Is it still building what you asked for\?/);
+  assert.match(launch, /Agent 很忙，但忙的还是你想做的事吗？/);
+  assert.match(launch, /Planned example only/i);
+  assert.match(launch, /personal-ledger fix[\s\S]*multi-tenant, microservice-style approach/i);
+  assert.match(launch, /user's real clarification/i);
+  assert.match(launch, /5–10/);
+  assert.doesNotMatch(launch, /docs\/cases/i);
+  assert.match(launch, /do not reuse private development cases/i);
+  assert.doesNotMatch(notes, /142 files|363 files|142 个文件|363 个文件/);
+  assert.match(notes, /live runtime supervision generation and coach behavior were not validated/i);
+  assert.match(feedback, /installation \/ 安装问题/);
+  assert.match(feedback, /false positive \/ 误报/);
+  assert.match(feedback, /missed deviation \/ 漏报/);
+  assert.match(feedback, /usefulness \/ 使用体验/);
+  assert.match(feedback, /Do not include private prompts, conversation transcripts, tool logs, credentials, API keys/i);
+});

@@ -19,6 +19,18 @@
       "path": "README.zh-CN.md"
     },
     {
+      "source": ".github/ISSUE_TEMPLATE/feedback.yml",
+      "path": ".github/ISSUE_TEMPLATE/feedback.yml"
+    },
+    {
+      "source": "docs/launch.md",
+      "path": "docs/launch.md"
+    },
+    {
+      "source": "docs/releases/v0.0.1.md",
+      "path": "docs/releases/v0.0.1.md"
+    },
+    {
       "source": "release/cordis.patch.yml",
       "path": "cordis.patch.yml"
     },

@@ -2,9 +2,21 @@
 
 [简体中文](README.zh-CN.md)
 
-TaskWatch is a [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) plugin for supervising whether an Agent's work is still moving toward the user's task. It keeps the user's request, the model's interpretation, execution evidence, and supervision feedback distinct, so an inference cannot silently become a new instruction.
+> **Your coding agent is busy. Is it still building what you asked for?**
 
-TaskWatch is an independent DSH plugin; it is not affiliated with or endorsed by DeepSeek.
+A small fix can turn into a large refactor before anyone asks whether that is still the goal. TaskWatch is an early-preview [DeepSeek Harness (DSH)](https://github.com/deepseek-ai/deepseek-harness) plugin that keeps your request, the model's interpretation, visible execution evidence, and supervision feedback distinct, so an inference cannot silently become a new instruction.
+
+TaskWatch is independent and is not affiliated with or endorsed by DeepSeek.
+
+## Try the early preview
+
+```sh
+dsh plugin --profile web add github:cjx12036/TaskWatch
+```
+
+This is an early preview. The exported bundle has been smoke-checked on DSH `0.1.5-rc.3` for installation and sidebar UI flows with zero model calls. Live runtime generation and coach behavior have **not** been validated on that latest host, and TaskWatch makes no performance, benchmark, or quality claims. See the [prerelease notes](docs/releases/v0.0.1.md) for the measured scope and limits.
+
+For launch copy, an illustrative 45–60 second recording script, and the remaining human-run launch checklist, see [Launch materials](docs/launch.md).
 
 ## What it does
 

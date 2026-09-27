@@ -2,6 +2,10 @@
   "version": 1,
   "files": [
     {
+      "path": ".github/ISSUE_TEMPLATE/feedback.yml",
+      "sha256": "eb9ac21c6cbaff4734ca127e9f1b7a3bfd210cee7d6d3adeeb88bf5e12327b59"
+    },
+    {
       "path": ".gitignore",
       "sha256": "5dcafe0081873d86a46848d73316ca2d6fbc8b5b342228065ad4c8fe03342ad8"
     },
@@ -11,15 +15,23 @@
     },
     {
       "path": "README.md",
-      "sha256": "560ba674e808c886aedb575dbee9640ccc571b3612bc02a7bdcff921e83ffbd0"
+      "sha256": "f6504eb9b0cacd16b1ba5a48b47a38fb69d9f9f69eba18a9d85bf77283047892"
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "f031f32a31f5825d00f96ed3867d586a0989a465e3bdc28a6d702d4f834cea7b"
+      "sha256": "3e0ed32efe41f587bd8eea9844b3f105d1a1300390e6a6faa95b1b3cc5706ccd"
     },
     {
       "path": "cordis.patch.yml",
       "sha256": "e729860c06638a304baa7ecfda5455e9820c0d7dd7dd28d6639a4d257198e75d"
+    },
+    {
+      "path": "docs/launch.md",
+      "sha256": "85b33a297686e7d136a5b1ac1f0272abbc44a42069a7dce204fdef6e93c753b2"
+    },
+    {
+      "path": "docs/releases/v0.0.1.md",
+      "sha256": "32c8eea69ed9f7ed37cf9913a2f77382f06ee2d4f33c52022006cf3ec95cacb3"
     },
     {
       "path": "package-lock.json",
@@ -155,7 +167,7 @@
     },
     {
       "path": "release/files.json",
-      "sha256": "3c85e211a4162cdd8248ad4ec776a05d83c1bcb263ab550557d9cff8531279c7"
+      "sha256": "0c186a2b3b6bd67b123abec12ef2e6c08e106ded675ff587ebf944adfe3794eb"
     },
     {
       "path": "release/package-lock.json",
@@ -203,7 +215,7 @@
     },
     {
       "path": "tests/public-docs.test.mjs",
-      "sha256": "34d0145b18ba243a2469bc36937703601f04beed6ef1d0f4a4324630e6710b57"
+      "sha256": "1dbabfbfbfdba7f554a6bd06ba2e7149319a865fdf299ef4b4f266d6d4510d90"
     },
     {
       "path": "tests/public-export.test.mjs",
