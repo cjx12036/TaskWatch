@@ -1,0 +1,4 @@
+# The package manifest supplies the web client entry and host dependencies.
+- insert:
+    - id: taskwatch
+      name: dsh-taskwatch

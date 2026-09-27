@@ -1,0 +1,75 @@
+{
+  "name": "dsh-taskwatch",
+  "version": "0.0.1",
+  "description": "TaskWatch: user-intent tracking and agent supervision plugin for DeepSeek Harness (DSH)",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "agent-supervision",
+    "intent-tracking",
+    "taskwatch"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.23.2"
+  },
+  "exports": {
+    ".": "./plugins/taskwatch/index.mjs",
+    "./client": "./plugins/taskwatch/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "plugins/taskwatch/index.mjs",
+    "plugins/taskwatch/web.mjs",
+    "plugins/taskwatch/client.js",
+    "plugins/taskwatch/client.source.mjs",
+    "plugins/taskwatch/i18n.mjs",
+    "packages/clarifications/*.mjs",
+    "packages/coach/*.mjs",
+    "packages/execution/*.mjs",
+    "packages/goals/*.mjs",
+    "packages/intent/*.mjs",
+    "packages/observe/*.mjs",
+    "packages/observer-chat/*.mjs",
+    "packages/reports/*.mjs",
+    "packages/sidebar/*.mjs",
+    "packages/dsh-adapter/json-check.mjs",
+    "packages/dsh-adapter/diagnostics.mjs",
+    "packages/dsh-adapter/limits.mjs",
+    "packages/validation/candidates.mjs",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "0.1.1-rc.2 || 0.1.5-rc.3",
+    "@deepseek-ai/dsh-client-ui-layout": "0.1.1-rc.2 || 0.1.5-rc.3",
+    "@deepseek-ai/dsh-client-connection": "0.1.1-rc.2 || 0.1.5-rc.3",
+    "@deepseek-ai/dsh-client-locale": "0.1.1-rc.2 || 0.1.5-rc.3"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-llm": "0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-layout": "0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-connection": "0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-locale": "0.1.1-rc.2",
+    "esbuild": "0.25.10"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build:client": "node scripts/build-taskwatch-client.mjs",
+    "export:public": "node scripts/export-public.mjs"
+  }
+}

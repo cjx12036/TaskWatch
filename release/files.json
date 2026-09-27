@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "buildClient": true,
+  "files": [
+    {
+      "source": ".gitignore",
+      "path": ".gitignore"
+    },
+    {
+      "source": "LICENSE",
+      "path": "LICENSE"
+    },
+    {
+      "source": "README.md",
+      "path": "README.md"
+    },
+    {
+      "source": "README.zh-CN.md",
+      "path": "README.zh-CN.md"
+    },
+    {
+      "source": "release/cordis.patch.yml",
+      "path": "cordis.patch.yml"
+    },
+    {
+      "source": "release/package-lock.json",
+      "path": "package-lock.json"
+    },
+    {
+      "source": "release/package.json",
+      "path": "package.json"
+    },
+    {
+      "source": "packages/clarifications/index.mjs",
+      "path": "packages/clarifications/index.mjs"
+    },
+    {
+      "source": "packages/coach/suggestions.mjs",
+      "path": "packages/coach/suggestions.mjs"
+    },
+    {
+      "source": "packages/dsh-adapter/diagnostics.mjs",
+      "path": "packages/dsh-adapter/diagnostics.mjs"
+    },
+    {
+      "source": "packages/dsh-adapter/json-check.mjs",
+      "path": "packages/dsh-adapter/json-check.mjs"
+    },
+    {
+      "source": "packages/dsh-adapter/limits.mjs",
+      "path": "packages/dsh-adapter/limits.mjs"
+    },
+    {
+      "source": "packages/execution/assess.mjs",
+      "path": "packages/execution/assess.mjs"
+    },
+    {
+      "source": "packages/execution/source-ranges.mjs",
+      "path": "packages/execution/source-ranges.mjs"
+    },
+    {
+      "source": "packages/execution/store.mjs",
+      "path": "packages/execution/store.mjs"
+    },
+    {
+      "source": "packages/execution/window.mjs",
+      "path": "packages/execution/window.mjs"
+    },
+    {
+      "source": "packages/goals/candidates.mjs",
+      "path": "packages/goals/candidates.mjs"
+    },
+    {
+      "source": "packages/goals/extract.mjs",
+      "path": "packages/goals/extract.mjs"
+    },
+    {
+      "source": "packages/goals/hierarchy.mjs",
+      "path": "packages/goals/hierarchy.mjs"
+    },
+    {
+      "source": "packages/intent/extract.mjs",
+      "path": "packages/intent/extract.mjs"
+    },
+    {
+      "source": "packages/intent/ledger.mjs",
+      "path": "packages/intent/ledger.mjs"
+    },
+    {
+      "source": "packages/intent/long-extract.mjs",
+      "path": "packages/intent/long-extract.mjs"
+    },
+    {
+      "source": "packages/intent/schema.mjs",
+      "path": "packages/intent/schema.mjs"
+    },
+    {
+      "source": "packages/intent/source-spans.mjs",
+      "path": "packages/intent/source-spans.mjs"
+    },
+    {
+      "source": "packages/observe/budget.mjs",
+      "path": "packages/observe/budget.mjs"
+    },
+    {
+      "source": "packages/observe/checkpoint-scheduler.mjs",
+      "path": "packages/observe/checkpoint-scheduler.mjs"
+    },
+    {
+      "source": "packages/observe/controller.mjs",
+      "path": "packages/observe/controller.mjs"
+    },
+    {
+      "source": "packages/observe/usage.mjs",
+      "path": "packages/observe/usage.mjs"
+    },
+    {
+      "source": "packages/observer-chat/index.mjs",
+      "path": "packages/observer-chat/index.mjs"
+    },
+    {
+      "source": "packages/reports/observe.mjs",
+      "path": "packages/reports/observe.mjs"
+    },
+    {
+      "source": "packages/sidebar/service.mjs",
+      "path": "packages/sidebar/service.mjs"
+    },
+    {
+      "source": "packages/validation/candidates.mjs",
+      "path": "packages/validation/candidates.mjs"
+    },
+    {
+      "source": "plugins/taskwatch/client.js",
+      "path": "plugins/taskwatch/client.js"
+    },
+    {
+      "source": "plugins/taskwatch/client.source.mjs",
+      "path": "plugins/taskwatch/client.source.mjs"
+    },
+    {
+      "source": "plugins/taskwatch/i18n.mjs",
+      "path": "plugins/taskwatch/i18n.mjs"
+    },
+    {
+      "source": "plugins/taskwatch/index.mjs",
+      "path": "plugins/taskwatch/index.mjs"
+    },
+    {
+      "source": "plugins/taskwatch/web.mjs",
+      "path": "plugins/taskwatch/web.mjs"
+    },
+    {
+      "source": "release/cordis.patch.yml",
+      "path": "release/cordis.patch.yml"
+    },
+    {
+      "source": "release/files.json",
+      "path": "release/files.json"
+    },
+    {
+      "source": "release/package-lock.json",
+      "path": "release/package-lock.json"
+    },
+    {
+      "source": "release/package.json",
+      "path": "release/package.json"
+    },
+    {
+      "source": "scripts/build-taskwatch-client.mjs",
+      "path": "scripts/build-taskwatch-client.mjs"
+    },
+    {
+      "source": "scripts/export-public.mjs",
+      "path": "scripts/export-public.mjs"
+    },
+    {
+      "source": "tests/checkpoint-scheduler.test.mjs",
+      "path": "tests/checkpoint-scheduler.test.mjs"
+    },
+    {
+      "source": "tests/client-module-id.test.mjs",
+      "path": "tests/client-module-id.test.mjs"
+    },
+    {
+      "source": "tests/coach.test.mjs",
+      "path": "tests/coach.test.mjs"
+    },
+    {
+      "source": "tests/intent-extract.test.mjs",
+      "path": "tests/intent-extract.test.mjs"
+    },
+    {
+      "source": "tests/intent.test.mjs",
+      "path": "tests/intent.test.mjs"
+    },
+    {
+      "source": "tests/ledger-path.test.mjs",
+      "path": "tests/ledger-path.test.mjs"
+    },
+    {
+      "source": "tests/observe-budget.test.mjs",
+      "path": "tests/observe-budget.test.mjs"
+    },
+    {
+      "source": "tests/public-docs.test.mjs",
+      "path": "tests/public-docs.test.mjs"
+    },
+    {
+      "source": "tests/public-export.test.mjs",
+      "path": "tests/public-export.test.mjs"
+    },
+    {
+      "source": "tests/sidebar-notification-render.test.mjs",
+      "path": "tests/sidebar-notification-render.test.mjs"
+    },
+    {
+      "source": "tests/source-ranges.test.mjs",
+      "path": "tests/source-ranges.test.mjs"
+    },
+    {
+      "source": "tests/source-spans.test.mjs",
+      "path": "tests/source-spans.test.mjs"
+    },
+    {
+      "source": "tests/taskwatch-i18n.test.mjs",
+      "path": "tests/taskwatch-i18n.test.mjs"
+    },
+    {
+      "source": "tests/taskwatch-rpc.test.mjs",
+      "path": "tests/taskwatch-rpc.test.mjs"
+    }
+  ]
+}
